@@ -1,0 +1,38 @@
+	Como um <papel do negócio>, 
+	eu quero <objetivo do negócio>,
+	para <benefício/resultado obtido> 
+
+	BDD: 
+	Cenário 1: Cenário que a operação da certo.
+
+	Dado que <context especifico>
+	E <outro detalhe adicional>
+	Quando <Ação do usuário>
+	Então <Resultado>
+
+	Cenário 2: Cenário que a operação da errado.
+
+	Dado que <context especifico>
+	E <Outro detalhe adicional>
+	Quando <Ação do usuário>
+	Então <Resultado>
+
+--------------
+Exemplo:
+
+Como um cliente, eu quero colocar um produto no carrinho, para eu comprá-lo posteriormente. 
+
+Cenário 1: Colocar um item no carrinho
+	*Dado que* o produto XXX é exibido na vitrine
+	*E* possui estoque acima de 0 informado
+	*E* o usuário seleciona uma quantidade igual ou inferior a quantidade de estoque
+	*Quando* o usuário clicar em adicionar o item no carrinho
+	*Então* o usuário é redirecionado ao resumo do carrinho
+	*E* visualiza todos os items do carrinho 
+
+Cenário 2: Colocar um item indisponivel no carrinho
+	*Dado que* o produto XXX é exibido na vitrine
+	*E* possui informação do produto fora do estoque
+	*Quando* o usuário clicar em adicionar o item no carrinho
+	*Então* o usuário recebe uma mensagem do item fora do estoque
+	*E* um botão "desejo ser avisado quando disponível" aparece para o usuário decidir se deseja ser informado do retorno do produto ao estoque.
