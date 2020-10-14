@@ -4,9 +4,6 @@
 
 	BDD: 
 	Cenário 1: Cenário que a operação da certo.
-
-	BDD: 
-	Cenário 1: Cenário que a operação da certo.
 	Dado que <context especifico>
 	E <outro detalhe adicional>
 	E <Preecher os dados do formulario>
